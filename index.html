@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bot H4 Pro - IQ Option</title>
+    <title>Bot H4 Pro - Automação para IQ Option</title>
     <style>
         /* Reset e base */
         * {
@@ -273,126 +273,172 @@
                 gap: 15px;
             }
         }
-    </style>
+    
+/* ===== BOT H4 PRO V2 - VENDA ===== */
+html{scroll-behavior:smooth}
+.header-nav{display:flex;align-items:center;gap:18px}
+.header-nav a:not(.cta-btn){color:#8b9bb5;text-decoration:none;font-size:14px}
+.header-nav a:not(.cta-btn):hover{color:#fff}
+.hero-note{color:#718198;font-size:13px;margin-top:16px}
+.hero-actions{display:flex;flex-wrap:wrap;gap:12px;align-items:center}
+.secondary-btn{background:#18212c;border:1px solid #344456;color:#e8edf5;padding:12px 23px;border-radius:30px;font-weight:700;text-decoration:none}
+.secondary-btn:hover{border-color:#2b7eff}
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+.step{background:#111923;border:1px solid #2a3748;border-radius:14px;padding:25px 20px;text-align:center}
+.step-number{width:40px;height:40px;margin:0 auto 12px;border-radius:50%;display:grid;place-items:center;background:#172b47;color:#4b92ff;font-weight:900}
+.step h3{font-size:18px;margin-bottom:7px}.step p{color:#8292a9;font-size:14px}
+.highlight{background:linear-gradient(135deg,#101c2b,#111923);border:1px solid #2e5c91;border-radius:18px;padding:40px;display:grid;grid-template-columns:1.1fr .9fr;gap:35px;align-items:center}
+.highlight h2{font-size:30px;margin-bottom:14px}.highlight p{color:#9aa9bd;margin-bottom:15px}.highlight-list{list-style:none}.highlight-list li{margin:9px 0}.highlight-list strong{color:#4b92ff}
+.mini-panel{background:#090d13;border:1px solid #344456;border-radius:14px;padding:22px}.mini-panel-title{color:#8292a9;font-size:13px;margin-bottom:14px}
+.mode{display:flex;justify-content:space-between;padding:10px 0;border-bottom:1px solid #202c39;font-size:14px}.mode:last-child{border-bottom:0}.mode span:last-child{color:#00c897;font-weight:800}
+.video-box{max-width:900px;margin:0 auto;min-height:300px;border:1px solid #2a3748;background:#131a22;border-radius:18px;display:grid;place-items:center;text-align:center;padding:35px}.play{width:70px;height:70px;border-radius:50%;display:grid;place-items:center;margin:0 auto 15px;background:#2b7eff;font-size:28px}.video-box p{color:#8190a6;max-width:600px;margin:8px auto 0}
+.pricing{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;align-items:stretch}.price-card{background:#131a22;border:1px solid #2a3748;border-radius:17px;padding:30px 25px;position:relative;display:flex;flex-direction:column}.price-card.featured{border-color:#00c897;box-shadow:0 0 0 1px rgba(0,200,151,.12);transform:translateY(-7px)}.popular{position:absolute;top:-13px;left:50%;transform:translateX(-50%);background:#00c897;color:#07120f;font-size:11px;font-weight:900;padding:5px 13px;border-radius:20px;white-space:nowrap}.price-card h3{font-size:20px}.price-description{color:#8292a9;font-size:13px;margin:4px 0 17px}.price{font-size:39px;font-weight:900;line-height:1;margin-bottom:20px}.price small{color:#8292a9;font-size:12px;font-weight:500}.price-card ul{list-style:none;margin-bottom:24px;flex:1}.price-card li{padding:6px 0 6px 22px;font-size:14px;position:relative}.price-card li:before{content:'✓';position:absolute;left:0;color:#00c897;font-weight:900}.price-btn{display:block;text-align:center;text-decoration:none;padding:12px;border-radius:28px;background:#2b7eff;color:#fff;font-weight:800}.price-card.featured .price-btn{background:#00c897;color:#07120f}.pricing-note{text-align:center;color:#718198;font-size:12px;margin-top:18px}
+.receive{display:grid;grid-template-columns:repeat(4,1fr);gap:15px}.receive-item{background:#131a22;border:1px solid #2a3748;border-radius:13px;padding:21px 16px;text-align:center}.receive-item .icon{font-size:27px}.receive-item h3{font-size:16px}.receive-item p{color:#7f8ea3;font-size:12px}
+.faq{max-width:850px;margin:0 auto}details{background:#131a22;border:1px solid #2a3748;border-radius:11px;padding:17px 19px;margin-bottom:10px}summary{cursor:pointer;font-weight:700}details p{color:#8998ad;font-size:14px;margin-top:10px}
+.risk{max-width:900px;margin:0 auto 45px;text-align:center;color:#68778c;font-size:12px}
+@media(max-width:900px){.steps,.receive{grid-template-columns:repeat(2,1fr)}.pricing{grid-template-columns:1fr}.price-card.featured{transform:none}.highlight{grid-template-columns:1fr}}
+@media(max-width:650px){.header-nav{justify-content:center;flex-wrap:wrap}.header-nav a:not(.cta-btn){display:none}.steps,.receive{grid-template-columns:1fr}.hero-actions{justify-content:center}.highlight{padding:28px 20px}.video-box{min-height:240px}}
+</style>
 </head>
+
 <body>
-    <div class="container">
-        <!-- Header -->
-        <header>
-            <div class="logo">Bot <span>Pro</span> H4</div>
-            <a href="https://wa.me/5521990328462" target="_blank" class="cta-btn">📲 Comprar Agora</a>
-        </header>
+<div class="container">
+<header>
+  <div class="logo">Bot <span>Pro</span> H4</div>
+  <div class="header-nav">
+    <a href="#recursos">Recursos</a><a href="#como-funciona">Como funciona</a><a href="#planos">Planos</a><a href="#faq">FAQ</a>
+    <a href="#planos" class="cta-btn">🚀 Comprar Agora</a>
+  </div>
+</header>
 
-        <!-- Hero -->
-        <section class="hero">
-            <div>
-                <div class="hero-badge">🚀 Automação Inteligente</div>
-                <h1>Domine o <span>IQ Option</span> com o Bot H4 Pro</h1>
-                <p>
-                    Ganhe tempo e maximize seus resultados com nosso robô de trading 
-                    desenvolvido para operar de forma consistente e segura.
-                </p>
-                <a href="https://wa.me/5521990328462" target="_blank" class="cta-btn" style="background:#2b7eff; color:#fff;">
-                    Quero Testar Agora
-                </a>
-            </div>
-            <div class="hero-image">
-                <img src="imagens/hero.png" alt="Bot H4 Pro em ação">
-            </div>
-        </section>
-
-        <!-- Recursos / Explicações -->
-        <section class="features">
-            <h2>💡 Como o Bot H4 Pro pode te ajudar</h2>
-            <div class="features-grid">
-                <div class="feature-item">
-                    <h3>⚙️ Ajustes Personalizados</h3>
-                    <p>Configure stop win, stop loss, valor de entrada e escolha entre diferentes estratégias de gerenciamento.</p>
-                    <ul>
-                        <li>Stop Win / Loss ajustável</li>
-                        <li>Valor fixo ou dinâmico</li>
-                        <li>Alertas visuais no painel</li>
-                    </ul>
-                </div>
-                <div class="feature-item">
-                    <h3>📊 Gerenciamento de Banca</h3>
-                    <p>Proteja seu capital com 4 modos de gerenciamento:</p>
-                    <ul>
-                        <li><strong>Fixo</strong> – valor constante por entrada</li>
-                        <li><strong>Martingale</strong> – recuperação progressiva</li>
-                        <li><strong>Soros</strong> – multiplicador dinâmico</li>
-                        <li><strong>Alavancagem</strong> – baseado no saldo</li>
-                    </ul>
-                </div>
-                <div class="feature-item">
-                    <h3>🎯 Vantagens Exclusivas</h3>
-                    <ul>
-                        <li>⚡ Execução ultrarrápida</li>
-                        <li>🔒 Segurança dos seus dados</li>
-                        <li>📱 Controle via web (qualquer dispositivo)</li>
-                        <li>📈 Histórico completo de operações</li>
-                        <li>🔄 Atualizações automáticas</li>
-                    </ul>
-                </div>
-            </div>
-        </section>
-
-        <!-- Imagens do Bot -->
-        <section class="screenshots">
-            <h2>🖥️ Interface do Bot</h2>
-            <div class="screenshot-grid">
-                <div class="card">
-                    <img src="imagens/painel.png" alt="Painel de controle">
-                    <p>Painel de controle com status em tempo real</p>
-                </div>
-                <div class="card">
-                    <img src="imagens/config.png" alt="Configurações">
-                    <p>Configurações de entrada e gerenciamento</p>
-                </div>
-                <div class="card">
-                    <img src="imagens/grafico.png" alt="Gráficos">
-                    <p>Gráficos e assertividade das operações</p>
-                </div>
-                <div class="card">
-                    <img src="imagens/terminal.png" alt="Terminal">
-                    <p>Terminal de logs com histórico de trades</p>
-                </div>
-            </div>
-
-            <p style="text-align:center; color:#8b9bb5; margin-top:20px;">
-                <em>Imagens reais do Bot em funcionamento.</em>
-            </p>
-        </section>
-
-        <!-- Contato -->
-        <section class="contact">
-            <h2>📞 Fale Conosco</h2>
-            <p>
-                Tire dúvidas, solicite uma demonstração ou renove sua licença.<br>
-                Nossa equipe está pronta para atender você.
-            </p>
-            <div class="contact-buttons">
-                <a href="https://wa.me/5521990328462" target="_blank" class="contact-btn whatsapp">
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-                    WhatsApp
-                </a>
-                <a href="mailto:j.mauro.j@outlook.com" class="contact-btn email">
-                    ✉️ Email
-                </a>
-                <a href="/index.html" class="contact-btn" style="background: #2a3748; color:#e8edf5;">
-                    🔐 Acessar Painel
-                </a>
-            </div>
-        </section>
-
-        <!-- Footer -->
-        <footer>
-            <p>
-                &copy; 2026 Bot H4 Pro – Todos os direitos reservados.<br>
-                <a href="mailto:j.mauro.j@outlook.com">j.mauro.j@outlook.com</a> &nbsp;|&nbsp;
-                <a href="https://wa.me/5521990328462" target="_blank">Suporte WhatsApp</a>
-            </p>
-        </footer>
+<section class="hero">
+  <div>
+    <div class="hero-badge">🤖 Automação para IQ Option</div>
+    <h1>Automatize suas operações com o <span>Bot H4 Pro</span></h1>
+    <p>Um robô desenvolvido com <strong>estratégia própria</strong>, execução automática e diferentes opções de gerenciamento de banca. A estratégia já está integrada ao Bot; você escolhe como deseja gerenciar suas entradas.</p>
+    <div class="hero-actions">
+      <a href="#planos" class="cta-btn">🚀 Ver Planos e Preços</a>
+      <a href="#demonstracao" class="secondary-btn">▶ Ver o Bot em Ação</a>
     </div>
+    <div class="hero-note">Licença individual • Instalação no computador • Suporte</div>
+  </div>
+  <div class="hero-image"><img src="imagens/hero.png" alt="Bot H4 Pro em funcionamento"></div>
+</section>
+
+<section class="features" id="como-funciona">
+  <h2>⚡ Como funciona</h2>
+  <p style="text-align:center;color:#8b9bb5;max-width:760px;margin:0 auto 38px">O Bot H4 Pro já possui sua própria estratégia. Depois de ativar e configurar o gerenciamento, o software pode executar automaticamente as operações.</p>
+  <div class="steps">
+    <div class="step"><div class="step-number">1</div><h3>Instale</h3><p>Baixe e instale o Bot H4 Pro no computador.</p></div>
+    <div class="step"><div class="step-number">2</div><h3>Ative</h3><p>Use sua licença/serial para ativar o software.</p></div>
+    <div class="step"><div class="step-number">3</div><h3>Configure</h3><p>Escolha o gerenciamento, valor de entrada e quantidade de Gales.</p></div>
+    <div class="step"><div class="step-number">4</div><h3>Inicie</h3><p>Conecte sua conta e deixe o Bot executar automaticamente.</p></div>
+  </div>
+</section>
+
+<section class="features" id="recursos">
+  <h2>💡 O que o Bot H4 Pro oferece</h2>
+  <p style="text-align:center;color:#8b9bb5;max-width:760px;margin:0 auto 38px">Você recebe uma estratégia pronta e pode escolher a forma de gerenciamento disponível no Bot.</p>
+  <div class="features-grid">
+    <div class="feature-item"><h3>🎯 Estratégia própria</h3><p>A lógica de operação já faz parte do Bot. Você não precisa criar uma estratégia para começar.</p><ul><li>Estratégia integrada</li><li>Análise e sinais automáticos</li><li>Execução automática</li></ul></div>
+    <div class="feature-item"><h3>📊 Gerenciamento de banca</h3><p>Escolha como deseja administrar o valor das entradas.</p><ul><li>Mão fixa</li><li>Soros</li><li>Martingale</li><li>Alavancagem</li><li>Quantidade de Gales configurável</li></ul></div>
+    <div class="feature-item"><h3>🛡️ Controle de risco</h3><p>Configure limites e parâmetros para controlar a exposição durante a operação.</p><ul><li>Stop Win</li><li>Stop Loss</li><li>Valor de entrada</li><li>Parâmetros de gerenciamento</li></ul></div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="highlight">
+    <div>
+      <h2>🤖 Estratégia pronta. Gerenciamento do seu jeito.</h2>
+      <p>O Bot H4 Pro não exige que o cliente monte uma estratégia do zero. A estratégia de operação já vem integrada. O que você pode escolher é a forma de gerenciamento da banca.</p>
+      <ul class="highlight-list">
+        <li>✓ <strong>Mão fixa:</strong> valor definido por entrada</li>
+        <li>✓ <strong>Soros:</strong> gerenciamento progressivo conforme configuração</li>
+        <li>✓ <strong>Martingale:</strong> recuperação configurável</li>
+        <li>✓ <strong>Alavancagem:</strong> gerenciamento baseado no saldo/configuração</li>
+        <li>✓ <strong>Gales:</strong> defina a quantidade permitida</li>
+      </ul>
+    </div>
+    <div class="mini-panel">
+      <div class="mini-panel-title">EXEMPLO DE CONFIGURAÇÃO</div>
+      <div class="mode"><span>Gerenciamento</span><span>Martingale</span></div>
+      <div class="mode"><span>Entrada</span><span>R$ 10,00</span></div>
+      <div class="mode"><span>Quantidade de Gales</span><span>2</span></div>
+      <div class="mode"><span>Stop Win</span><span>Configurável</span></div>
+      <div class="mode"><span>Stop Loss</span><span>Configurável</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="screenshots">
+  <h2>🖥️ Conheça a interface</h2>
+  <p style="text-align:center;color:#8b9bb5;max-width:760px;margin:0 auto 30px">Veja algumas telas do Bot H4 Pro e acompanhe as informações da operação diretamente pelo painel.</p>
+  <div class="screenshot-grid">
+    <div class="card"><img src="imagens/painel.png" alt="Painel de controle"><p>Painel de controle com status da operação</p></div>
+    <div class="card"><img src="imagens/config.png" alt="Configurações"><p>Configurações de entrada e gerenciamento</p></div>
+    <div class="card"><img src="imagens/grafico.png" alt="Gráficos"><p>Gráficos e acompanhamento das operações</p></div>
+    <div class="card"><img src="imagens/terminal.png" alt="Terminal"><p>Terminal de logs e histórico de trades</p></div>
+  </div>
+  <p style="text-align:center;color:#68778c;margin-top:18px"><em>Imagens reais da interface do Bot H4 Pro.</em></p>
+</section>
+
+<section class="section" id="demonstracao">
+  <h2 class="section-title">🎥 Veja o Bot H4 Pro em ação</h2>
+  <p class="section-subtitle">Aqui você poderá apresentar um vídeo real mostrando o funcionamento do software, desde a conexão até a execução das operações.</p>
+  <div class="video-box"><div><div class="play">▶</div><h3>Demonstração do Bot H4 Pro</h3><p>Substitua este espaço pelo seu vídeo de demonstração quando ele estiver pronto.</p></div></div>
+</section>
+
+<section class="section" id="planos">
+  <h2 class="section-title">💰 Escolha sua licença</h2>
+  <p class="section-subtitle">Planos para 1 computador. Escolha o período que melhor atende ao seu objetivo.</p>
+  <div class="pricing">
+    <div class="price-card"><h3>30 Dias</h3><div class="price-description">Para conhecer o Bot H4 Pro</div><div class="price">R$ 97 <small>/ 30 dias</small></div><ul><li>Bot H4 Pro</li><li>Licença para 1 computador</li><li>Ativação por serial</li><li>Suporte à instalação</li><li>Atualizações durante a licença</li></ul><a class="price-btn" href="https://wa.me/5521990328462?text=Ol%C3%A1!%20Tenho%20interesse%20na%20licen%C3%A7a%20de%2030%20dias%20do%20Bot%20H4%20Pro." target="_blank">QUERO COMPRAR</a></div>
+    <div class="price-card featured"><div class="popular">⭐ MAIS VENDIDO</div><h3>90 Dias</h3><div class="price-description">Melhor equilíbrio entre preço e período</div><div class="price">R$ 197 <small>/ 90 dias</small></div><ul><li>Bot H4 Pro</li><li>Licença para 1 computador</li><li>Ativação por serial</li><li>Suporte à instalação</li><li>Atualizações durante a licença</li></ul><a class="price-btn" href="https://wa.me/5521990328462?text=Ol%C3%A1!%20Tenho%20interesse%20na%20licen%C3%A7a%20de%2090%20dias%20do%20Bot%20H4%20Pro." target="_blank">QUERO COMPRAR</a></div>
+    <div class="price-card"><h3>12 Meses</h3><div class="price-description">Para quem pretende utilizar por mais tempo</div><div class="price">R$ 497 <small>/ 12 meses</small></div><ul><li>Bot H4 Pro</li><li>Licença para 1 computador</li><li>Ativação por serial</li><li>Suporte à instalação</li><li>Atualizações durante a licença</li></ul><a class="price-btn" href="https://wa.me/5521990328462?text=Ol%C3%A1!%20Tenho%20interesse%20na%20licen%C3%A7a%20de%2012%20meses%20do%20Bot%20H4%20Pro." target="_blank">QUERO COMPRAR</a></div>
+  </div>
+  <p class="pricing-note">Valores podem ser alterados conforme sua política comercial. Licença individual para 1 computador.</p>
+</section>
+
+<section class="section">
+  <h2 class="section-title">📦 O que você recebe</h2>
+  <p class="section-subtitle">Tudo o que o cliente precisa para instalar e começar a utilizar o software.</p>
+  <div class="receive">
+    <div class="receive-item"><div class="icon">🤖</div><h3>Bot H4 Pro</h3><p>Software executável para Windows</p></div>
+    <div class="receive-item"><div class="icon">🔐</div><h3>Licença / Serial</h3><p>Ativação individual do produto</p></div>
+    <div class="receive-item"><div class="icon">⚙️</div><h3>Configuração</h3><p>Orientações para configurar o bot</p></div>
+    <div class="receive-item"><div class="icon">💬</div><h3>Suporte</h3><p>Atendimento para instalação e dúvidas</p></div>
+  </div>
+</section>
+
+<section class="section" id="faq">
+  <h2 class="section-title">❓ Perguntas frequentes</h2>
+  <p class="section-subtitle">Tire as principais dúvidas antes da compra.</p>
+  <div class="faq">
+    <details><summary>O Bot H4 Pro já possui uma estratégia?</summary><p>Sim. O Bot H4 Pro possui estratégia própria integrada ao software. O cliente não precisa criar uma estratégia para utilizar o produto.</p></details>
+    <details><summary>Posso escolher o gerenciamento da banca?</summary><p>Sim. Conforme os recursos disponíveis no Bot, você pode escolher mão fixa, Soros, Martingale ou alavancagem, além de configurar a quantidade de Gales permitida.</p></details>
+    <details><summary>Quantos computadores posso usar?</summary><p>A licença comercial padrão é destinada a 1 computador. Em caso de troca de equipamento, entre em contato com o suporte.</p></details>
+    <details><summary>O Bot garante lucro?</summary><p>Não. O Bot H4 Pro é uma ferramenta de automação. Operações financeiras envolvem risco e resultados passados não garantem resultados futuros.</p></details>
+    <details><summary>Preciso deixar o computador ligado?</summary><p>Quando a versão utilizada depende da execução local, o computador precisa permanecer ligado e conectado à internet durante a operação.</p></details>
+    <details><summary>Como recebo minha licença?</summary><p>Após a confirmação da compra, o cliente recebe as instruções de instalação e ativação conforme o plano adquirido.</p></details>
+  </div>
+</section>
+
+<section class="final-cta">
+  <h2>🚀 Pronto para conhecer o Bot H4 Pro?</h2>
+  <p>Automatize a execução da estratégia do Bot e escolha o gerenciamento de banca que deseja utilizar.</p>
+  <a href="#planos" class="cta-btn">VER PLANOS E COMPRAR</a>
+</section>
+
+<div class="risk"><strong>Aviso de risco:</strong> operações financeiras envolvem riscos e podem resultar em perdas. O Bot H4 Pro é uma ferramenta de automação e não oferece garantia de lucro, rentabilidade ou resultados específicos. Utilize somente valores compatíveis com sua capacidade de assumir perdas.</div>
+
+<section class="contact" style="background:#131a22;border:1px solid #2a3748;border-radius:20px;padding:45px 30px;margin:0 0 50px;text-align:center">
+  <h2>📞 Ainda tem dúvidas?</h2>
+  <p style="color:#8b9bb5;margin:10px 0 24px">Fale conosco sobre o Bot H4 Pro, licença ou instalação.</p>
+  <div class="contact-buttons"><a href="https://wa.me/5521990328462" target="_blank" class="contact-btn whatsapp">💬 WhatsApp</a><a href="mailto:j.mauro.j@outlook.com" class="contact-btn email">✉️ E-mail</a></div>
+</section>
+
+<footer><p>&copy; 2026 Bot H4 Pro – Todos os direitos reservados.<br><a href="mailto:j.mauro.j@outlook.com">j.mauro.j@outlook.com</a> &nbsp;|&nbsp; <a href="https://wa.me/5521990328462" target="_blank">Suporte WhatsApp</a></p></footer>
+</div>
 </body>
+
 </html>
